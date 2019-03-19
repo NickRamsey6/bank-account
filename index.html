@@ -8,13 +8,53 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>Ping Pong</title>
+    <title>Bank Account</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Ping Pong</h1>
-
-      <form id="ping-pong">
+      <h1 class="text-center">First Bank of Nick and Alex</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 bg-info">
+            <h2>Register an account:</h2>
+            <form id="register">
+              <div class="form-group">
+                <label for="accountName">Name:</label>
+                <input type="text" name="accountName">
+              </div>
+              <div class="form-group">
+                <label for="initialDeposit">Initial Deposit:</label>
+                <input id="initialInput" type="number" name="initialDeposit" min="0">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <div></div>
+          </div>
+          <div class="col-md-4 bg-info">
+            <h2>Deposit or Withdrawal:</h2>
+            <form id="depositWithdraw">
+              <div class="form-group">
+                <label for="depositAmount">Deposit Amount:</label>
+                <input id="depositInput" type="number" name="depositAmount" min="0">
+              </div>
+              <div class="form-group">
+                <label for="withdrawalAmount">Withdrawal Amount:</label>
+                <input id="withdrawalInput" type="number" name="withdrawalAmount" min="0">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row bg-info">
+          <div class="col-md-8">
+            <h3 class="text-center">Current Balance:</h3>
+            <div class="text-center border-box">
+              <span class="balance"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <form id="ping-pong">
         <div class="form-group">
           <label for="number">Enter your number here:</label>
           <input id="number" type="number" min="0" max="100">
@@ -28,7 +68,7 @@
         <ul class="output">
           <span class = "list"></span>
         </ul>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
